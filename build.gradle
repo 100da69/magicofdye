@@ -1,0 +1,31 @@
+plugins {
+    id 'java-library'
+    id 'maven-publish'
+    id 'net.neoforged.moddev' version '2.0.78'
+}
+
+group = 'com.magicofdye'
+version = '1.0.0'
+
+base {
+    archivesName = 'magicofdye-neoforge'
+}
+
+java {
+    toolchain.languageVersion = JavaLanguageVersion.of(21)
+    withSourcesJar()
+}
+
+neoForge {
+    version = '21.1.172'
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.release = 21
+}
+
+processResources {
+    filesMatching('META-INF/neoforge.mods.toml') {
+        expand(version: version)
+    }
+}
