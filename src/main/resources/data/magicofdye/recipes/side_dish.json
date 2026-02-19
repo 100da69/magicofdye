@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "item": "minecraft:dried_kelp" },
+    { "item": "minecraft:black_dye" }
+  ],
+  "result": {
+    "id": "magicofdye:side_dish",
+    "count": 1
+  }
+}

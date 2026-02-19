@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "item": "minecraft:bread" },
+    { "item": "minecraft:red_dye" }
+  ],
+  "result": {
+    "id": "magicofdye:carbs",
+    "count": 1
+  }
+}
