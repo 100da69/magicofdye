@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "item": "minecraft:honey_bottle" },
+    { "item": "minecraft:blue_dye" }
+  ],
+  "result": {
+    "id": "magicofdye:drink",
+    "count": 1
+  }
+}
